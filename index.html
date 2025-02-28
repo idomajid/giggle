@@ -6,6 +6,28 @@
     <title>Giggle playschool</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <style>
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-3px);
+        }
+        50% {
+          transform: translateX(3px);
+        }
+        75% {
+          transform: translateX(-3px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .hover\:shake:hover {
+        animation: shake 0.3s ease-in-out;
+      }
+    </style>
   </head>
   <body
     class="bg-white text-white flex items-center justify-center min-h-screen"
@@ -33,28 +55,28 @@
         <a
           href="https://api.whatsapp.com/send/?phone=6285881478180"
           target="_blank"
-          class="flex items-center justify-center gap-2 bg-[#6391C6] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#43608A] transition"
+          class="flex items-center justify-center gap-2 bg-[#6391C6] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#43608A] transition hover:shake"
         >
           <i class="fab fa-whatsapp"></i> Register / Talk with us!</a
         >
         <a
           href="https://api.whatsapp.com/send/?phone=6285881478180"
           target="_blank"
-          class="flex items-center justify-center gap-2 bg-[#6391C6] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#43608A] transition"
+          class="flex items-center justify-center gap-2 bg-[#6391C6] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#43608A] transition hover:shake"
         >
           <i class="fab fa-whatsapp"></i> Join Group
         </a>
         <a
           href="#"
           target="_blank"
-          class="flex items-center justify-center gap-2 bg-[#6391C6] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#43608A] transition"
+          class="flex items-center justify-center gap-2 bg-[#6391C6] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#43608A] transition hover:shake"
         >
           <i class="fas fa-file-alt"></i> Digital Brochure</a
         >
         <a
           href="#"
           target="_blank"
-          class="flex items-center justify-center gap-2 bg-[#6391C6] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#43608A] transition"
+          class="flex items-center justify-center gap-2 bg-[#6391C6] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#43608A] transition hover:shake"
           ><i class="fas fa-globe"></i> Website</a
         >
       </div>
